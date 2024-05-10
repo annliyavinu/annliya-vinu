@@ -1,0 +1,841 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html lang="en"> <!--<![endif]-->
+
+<!-- Mirrored from marketifythemes.net/html/grax/water.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 04 Apr 2024 09:33:39 GMT -->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="icon" type="image/png" href="img/notify.jpg" />
+<meta name="description" content="Name of your web site">
+<meta name="author" content="Marketify">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<title>Annliya's Personal Website</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="css/plugins.css" />
+<link rel="stylesheet" type="text/css" href="css/colors.css" />
+<link rel="stylesheet" type="text/css" href="css/darkMode.css" />
+<link rel="stylesheet" type="text/css" href="css/style.css" />
+<!--[if lt IE 9]> <script type="text/javascript" src="js/modernizr.custom.js"></script> <![endif]-->
+<style>
+    #custom-notification {
+      background-color: #f8d7da;
+      color: #721c24;
+      padding: 10px;
+      border-radius: 5px;
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      display: none;
+    }
+    
+    #custom-notification.show {
+      display: block;
+    }
+    .grax_tm_modalbox_news .close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+    cursor: pointer;
+    color: #fff;
+}
+    
+    #custom-notification img {
+      width: 50px; /* Adjust size as needed */
+      height: auto; /* Maintain aspect ratio */
+      border-radius: 50%; /* To make it round */
+      margin-bottom: 10px;
+    }
+    
+    #custom-notification p {
+      margin: 0;
+    }
+    
+    #custom-notification a {
+      color: #007bff;
+      text-decoration: none;
+      margin-top: 10px;
+      display: block;
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+       .notification {
+      position: fixed;
+      top:99px;
+      right: 20px;
+      background-color: #fff;
+      padding: 20px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      display: none;
+      max-width: 300px; /* Adjust the max-width as needed */
+    }
+    
+    .image {
+      max-width: 100%;
+      height: auto;
+    }
+    
+    .content {
+      text-align: center;
+    }
+    
+    .notification p {
+      font-size: 18px;
+      margin-bottom: 15px;
+    }
+    
+    .notification button {
+      background-color: #007bff;
+      color: #fff;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    
+    .timer {
+      font-size: 14px;
+      margin-top: 10px;
+      color: #999;
+    }
+    
+    @media screen and (max-width: 768px) {
+      .notification {
+        right: 10px;
+        left: 10px;
+      }
+    }
+    
+    </style>
+</head>
+<body> 
+
+<div id="preloader">
+<div class="loader_line"></div>
+</div>
+
+
+<div class="grax_tm_all_wrap" data-magic-cursor data-color="crimson">
+
+
+
+<div class="grax_tm_settings">
+<div class="icon">
+<img class="svg" src="img/svg/setting.svg" alt />
+<a class="link" href="#"></a>
+</div>
+<div class="wrapper">
+<ul class="direction">
+<li><a class="active light" href="#"><img class="svg" src="img/svg/weather.svg" alt=" /"></a></li>
+<li><a class="dark" href="#"><img class="svg" src="img/svg/islam.svg" alt=" /"></a></li>
+</ul>
+<span class="title">Unlimited Colors</span>
+<ul class="colors">
+<li><a class="blue" href="#"></a></li>
+<li><a class="green" href="#"></a></li>
+<li><a class="brown" href="#"></a></li>
+<li><a class="pink" href="#"></a></li>
+<li><a class="orange" href="#"></a></li>
+<li class="bl"><a class="black" href="#"></a></li>
+<li class="wh"><a class="white" href="#"></a></li>
+<li><a class="purple" href="#"></a></li>
+<li><a class="sky" href="#"></a></li>
+<li><a class="cadetBlue" href="#"></a></li>
+<li><a class="crimson" href="#"></a></li>
+<li><a class="olive" href="#"></a></li>
+<li><a class="red" href="#"></a></li>
+</ul>
+<span class="title">Magic Cursor</span>
+<ul class="cursor">
+<li><a class="showme show" href="#"></a></li>
+<li><a class="hide" href="#"><img class="svg" src="img/svg/arrow.svg" alt /></a></li>
+</ul>
+</div>
+</div>
+
+
+<div class="grax_tm_modalbox_news">
+<div class="box_inner">
+<div class="close">
+<a href="#"><img class="svg" src="img/svg/cancel.svg" alt /></a>
+</div>
+<div class="description_wrap scrollable">
+</div>
+</div>
+</div>
+
+
+<div class="grax_tm_topbar">
+<div class="container">
+<div class="topbar_inner">
+<div class="logo">
+  <a class="dark" href="index.html"><img src="img/logo/dreamgirl1.png" style="background-color: black;" alt /></a>
+  <a class="light" href="#" ><img src="img/logo/dreamgirl1.png" alt  style="background-color: black;"/></a>
+</div>
+<div class="menu">
+<ul class="anchor_nav">
+<li class="current"><a href="#home">Home</a></li>
+<li><a href="#about">About</a></li>
+<li><a href="#portfolio">skills</a></li>
+<li><a href="#news">Memories</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+
+
+<div class="grax_tm_mobile_menu">
+<div class="topbar_inner">
+<div class="container bigger">
+<div class="topbar_in">
+<div class="logo">
+<a href="#"><img src="img/logo/dreamgirl1.png" alt /></a>
+</div>
+<div class="my_trigger">
+<div class="hamburger hamburger--collapse-r">
+<div class="hamburger-box">
+<div class="hamburger-inner"></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="dropdown">
+<div class="container">
+<div class="dropdown_inner">
+<ul class="anchor_nav">
+<li><a href="#home">Home</a></li>
+<li><a href="#about">About</a></li>
+<li><a href="#portfolio">Skills</a></li>
+<li><a href="#news">Memories</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+
+
+<div class="grax_tm_hero" id="home">
+<div class="ripple" id="ripple"></div>
+<div class="container water">
+<div class="details" data-animation="toRight"> 
+    <a href="#about"><h3 class="fn_animation name">Annliyavinu</h3></a>
+    <a href="https://www.instagram.com/its_me___liya/"><span class="fn_animation job">-----Dream Girl
+         </span></a>
+</div>
+<div class="grax_tm_down" data-skin="light">
+<div class="line_wrapper">
+<div class="line"></div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="grax_tm_section" id="about">
+    <div id="notification" class="notification">
+  <img src="img/notificationinsta.jpg" alt="Happy Birthday" class="image">
+  <div class="content">
+    <p id="message">"Happy Birthday, Annliya! Wishing you a year ahead that's as beautiful and bright as you are!" 🎂✨ <span id="name"></span>!</p>
+    <button id="closeBtn">Close</button>
+    <div id="timer" class="timer"></div>
+  </div>
+</div>
+
+
+
+<div id="custom-notification">
+  <img src="img/notify.jpg" alt="User Image">
+  <p>Follow me on Instagram!</p>
+  <a href="https://www.instagram.com/its_me___liya/" id="instagram-link" target="_blank">Follow</a>
+</div>
+
+
+
+<div class="grax_tm_section" id="about">
+<div class="grax_tm_about">
+<div class="container">
+<div class="about_inner">
+<div class="left wow fadeInLeft" data-wow-duration="1.5s">
+<div class="image parallax" data-relative-input="true">
+<img src="img/placeholders/3-4.jpg" alt />
+<div class="main layer" data-img-url="img/profile.jpeg" data-depth="0.04"></div>
+</div>
+</div>
+<div class="right wow fadeInLeft" data-wow-duration="1.5s" data-wow-delay=".2s">
+<div class="grax_tm_title_holder">
+<h3>About <span>Me</span></h3>
+</div>
+<div class="text">
+    <p>
+        🦋dream. ...girl..
+        🦋𝕤𝕥𝕦𝕕𝕖𝕟𝕥 𝕘𝕚𝕣𝕝🤗
+                      <br>"🌟 Hello, I'm <a href="https://namesfolder.com/cristian-girl-name/annliya" style="text-decoration:none;">Annliya</a> 
+        
+         16-year-old girl with a heart<br> brimming with dreams and aspirations. Hailing from the picturesque city of Thrissur, I find solace and strength <br> in the loving embrace of my family – my dad, mom, and myself. They are not just my support system but also my source of inspiration, fueling my passion to pursue my dreams relentlessly.
+        
+            🌸 As I embark on this journey, I draw immense inspiration from the remarkable life of <a href="https://xylemlearning.com/team/" style="text-decoration: none;">Dr.Ananthu.S, the visionary founder of Xylem</a>. His unwavering dedication to innovation and positive impact resonates deeply with me, igniting a fire within to strive <br> for excellence in everything I do.
+            
+            💉 With a heart set on becoming a doctor, I am driven by a fervent desire to <br> heal and make a meaningful difference in the lives of  <br>others. Join me as I weave my dreams into reality,<br> guided by the values of perseverance, compassion, and innovation, just like my hero, <a href="https://www.instagram.com/dr.ananthu.s?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" style="text-decoration:none;">Dr. Ananthu.S</a></p>
+        </div>
+<div class="list">
+<ul>
+<li>
+<div class="list_inner">
+<img class="svg" src="img/svg/checked.svg" alt />
+<span>Dancing</span>
+</div>
+</li>
+<li>
+<div class="list_inner">
+<img class="svg" src="img/svg/checked.svg" alt />
+<span>Singing</span>
+</div>
+</li>
+<li>
+<div class="list_inner">
+<img class="svg" src="img/svg/checked.svg" alt />
+<span>Drawing</span>
+</div>
+</li>
+<li>
+<div class="list_inner">
+<img class="svg" src="img/svg/checked.svg" alt />
+<span>Video Editor</span>
+</div>
+</li>
+</ul>
+</div>
+<div class="grax_tm_button">
+    <a href="coming.html" >More About My Family</a></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+
+<div class="grax_tm_section" id="portfolio">
+<div class="grax_tm_portfolio">
+<div class="container">
+<div class="grax_tm_title_holder">
+<h3>My<span>Creativity</span></h3>
+</div>
+<div class="portfolio_list">
+<ul class="gallery_zoom my_waypoint">
+<li class="wow fadeInLeft" data-wow-duration="1.5s">
+<div class="list_inner">
+<div class="image">
+<img src="img/singer.webp" alt />
+<div class="main" data-img-url="img/singer.webp"></div>
+</div>
+<div class="overlay"></div>
+<div class="details">
+<span>Video</span>
+<h3>Song</h3>
+</div>
+<a class="grax_tm_full_link popup-youtube" href="img/song.mp4"></a>
+</div>
+</li>
+<li class="wow fadeInLeft" data-wow-duration="1.5s" data-wow-delay=".2s">
+<div class="list_inner">
+<div class="image">
+<img src="img/seaphoto.enc" alt />
+<div class="main" data-img-url="img/seaphoto.enc"></div>
+</div>
+<div class="overlay"></div>
+<div class="details">
+<span>Vacation Photography</span>
+<h3>With Enchanting Seas</h3>
+</div>
+<a class="grax_tm_full_link zoom" href="img/seaphoto.enc"></a>
+</div>
+</li>
+<!-- <li class="wow fadeInLeft" data-wow-duration="1.5s" data-wow-delay=".4s">
+<div class="list_inner">
+<div class="image">
+<img src="img/placeholders/1-1.jpg" alt />
+<div class="main" data-img-url="img/portfolio/3.jpg"></div>
+</div>
+<div class="overlay"></div>
+<div class="details">
+<span>Vacation Photography</span>
+<h3>With Enchanting Seas</h3>
+</div>
+<a class="grax_tm_full_link zoom" href="img/seaphoto.enc"></a>
+</div> -->
+<!-- </li>
+<li class="wow fadeInLeft" data-wow-duration="1.5s">
+<div class="list_inner">
+<div class="image">
+<img src="img/placeholders/1-1.jpg" alt />
+<div class="main" data-img-url="img/portfolio/4.jpg"></div>
+</div>
+<div class="overlay"></div>
+<div class="details">
+<span>Video</span>
+<h3>Black Coffee</h3>
+</div>
+<a class="grax_tm_full_link popup-youtube" href="https://www.youtube.com/watch?v=ICr_bOuM9Zo"></a>
+</div>
+</li> 
+ <li class="wow fadeInLeft" data-wow-duration="1.5s" data-wow-delay=".2s">
+<div class="list_inner">
+<div class="image">
+<img src="img/placeholders/1-1.jpg" alt />
+<div class="main" data-img-url="img/portfolio/5.jpg"></div>
+</div>
+<div class="overlay"></div>
+<div class="details">
+<span>Branding</span>
+<h3>Blue Lemon</h3>
+</div>
+<a class="grax_tm_full_link zoom" href="img/portfolio/5.jpg"></a>
+</div>
+</li>
+<li class="wow fadeInLeft" data-wow-duration="1.5s" data-wow-delay=".4s">
+<div class="list_inner">
+<div class="image">
+<img src="img/placeholders/1-1.jpg" alt />
+<div class="main" data-img-url="img/portfolio/7.jpg"></div>
+</div>
+<div class="overlay"></div>
+<div class="details">
+<span>Design</span>
+<h3>Delicious Cherry</h3>
+</div>
+<a class="grax_tm_full_link zoom" href="img/portfolio/7.jpg"></a>
+</div>
+</li> -->
+</ul>
+</div>
+</div>
+</div>
+</div>
+
+
+<div class="grax_tm_progress_part">
+<div class="container">
+<div class="part_inner">
+<div class="left wow fadeInLeft" data-wow-duration="1.5s">
+<h3>I have high skills in Singing and Dancing</h3>
+<p>I was doing everything in my power to provide me with all the experiences to provide cost-effective and high quality products to satisfy my customers all over the world</p>
+</div>
+<div class="right wow fadeInLeft" data-wow-duration="1.5s" data-wow-delay=".2s">
+    <div class="kioto_progress">
+        <div class="progress_inner" data-value="95">
+        <span><span class="label">Dancer</span><span class="number">95%</span></span>
+        <div class="background"><div class="bar"><div class="bar_in"></div></div></div>
+        </div>
+        <div class="progress_inner" data-value="90">
+        <span><span class="label">Singer</span><span class="number">90%</span></span>
+        <div class="background"><div class="bar"><div class="bar_in"></div></div></div>
+        </div>
+        <div class="progress_inner" data-value="99.9">
+        <span><span class="label">Dream to become a Professional Doctor</span><span class="number">99.9%</span></span>
+        <div class="background"><div class="bar"><div class="bar_in"></div></div></div>
+        </div>
+        </div>
+</div>
+</div>
+</div>
+</div>
+
+
+<div class="grax_tm_section">
+    <div class="grax_tm_talk">
+    <div class="container">
+    <div class="talk_inner">
+    <div class="text wow fadeInLeft" data-wow-duration="1.5s">
+    <h3><span>I like to watch movies and listening to the songs</span></h3>
+    </div>
+    <div class="button wow fadeInLeft anchor" data-wow-duration="1.5s" data-wow-delay=".2s">
+    <a href="#contact">My favourites</a>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+
+
+<div class="grax_tm_section" id="news">
+<div class="grax_tm_news">
+<div class="container">
+<div class="grax_tm_title_holder">
+    <h3>MY <span> Memories</span> AND <span>FAVOURITES</span></h3>
+</div>
+<div class="grax_tm_portfolio">
+    <div class="container">
+    
+    <div class="portfolio_list">
+    <ul class="gallery_zoom my_waypoint">
+    <li class="wow fadeInLeft" data-wow-duration="1.5s">
+    <div class="list_inner">
+    <div class="image">
+    <img src="img/songfav.jpg" alt />
+    <div class="main" data-img-url="/img/songfav.jpg"></div>
+    </div>
+    <div class="overlay"></div>
+    <div class="details">
+    <span>My Fav😍😍</span>
+    <h3>Song</h3>
+    </div>
+    <a class="grax_tm_full_link popup-youtube" href="img/favSong.mp4" ></a>
+    </div>
+    </li>
+    <li class="wow fadeInLeft" data-wow-duration="1.5s" data-wow-delay=".2s" >
+    <div class="list_inner">
+    <div class="image">
+    <img src="https://scontent.fcok6-2.fna.fbcdn.net/v/t39.30808-6/435794068_122109499412273209_5078210297342844122_n.jpg?stp=dst-jpg_p526x296&_nc_cat=105&ccb=1-7&_nc_sid=5f2048&_nc_ohc=Dn42QkNGG38Ab5sPt1H&_nc_ht=scontent.fcok6-2.fna&oh=00_AfAP96--aXhaJJUL_POgr5YLM1h8BexIJYVEcy5OEmQ2Yg&oe=66365A61" alt />
+    <div class="main" data-img-url="https://scontent.fcok6-2.fna.fbcdn.net/v/t39.30808-6/435794068_122109499412273209_5078210297342844122_n.jpg?stp=dst-jpg_p526x296&_nc_cat=105&ccb=1-7&_nc_sid=5f2048&_nc_ohc=Dn42QkNGG38Ab5sPt1H&_nc_ht=scontent.fcok6-2.fna&oh=00_AfAP96--aXhaJJUL_POgr5YLM1h8BexIJYVEcy5OEmQ2Yg&oe=66365A61"></div>
+    </div>
+    <div class="overlay"></div>
+    <div class="details">
+    <span>My Heart 💘💝💓🥰</span>
+    <h3>𝕞𝕠𝕞_𝕕𝕒𝕕 𝕞𝕪 𝕨𝕠𝕣𝕝𝕕 🥰
+    </h3>
+    </div>
+    <a class="grax_tm_full_link zoom" href="https://scontent.fcok6-2.fna.fbcdn.net/v/t39.30808-6/435794068_122109499412273209_5078210297342844122_n.jpg?stp=dst-jpg_p526x296&_nc_cat=105&ccb=1-7&_nc_sid=5f2048&_nc_ohc=Dn42QkNGG38Ab5sPt1H&_nc_ht=scontent.fcok6-2.fna&oh=00_AfAP96--aXhaJJUL_POgr5YLM1h8BexIJYVEcy5OEmQ2Yg&oe=66365A61"></a>
+    </div>
+    </li>
+    <li class="wow fadeInLeft" data-wow-duration="1.5s" data-wow-delay=".2s" >
+      <div class="list_inner">
+      <div class="image">
+      <img src="img/friedrice.jpg" alt />
+      <div class="main" data-img-url="img/friedrice.jpg"></div>
+      </div>
+      <div class="overlay"></div>
+      <div class="details">
+      <span>My Fav</span>
+      <a></a>
+      <h3>Food Fried rice 🍛🍚😋😋</h3>
+      </div>
+      
+      <a class="grax_tm_full_link zoom" href="img/friedrice.jpg"></a>
+  
+      </div>
+      </li>
+    
+  
+    
+  </div>
+  </div>
+  </div>
+
+
+
+<div class="news_list">
+<ul>
+<li class="wow fadeInLeft" data-wow-duration="1.5s">
+<div class="list_inner">
+  
+  
+<div class="image">
+<iframe width="560" height="315" src="https://www.youtube.com/embed/APxqCZ11FOA?si=9Ets2IhP5Ekc-fRr&autoplay=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen allowautoplay></iframe></div>
+<div class="details">
+<h3><a href="https://www.instagram.com/explore/locations/1032822642/hss-arimpur/" style="text-decoration:none;color:black">10th Life 😘😍</a></h3>
+<p class="date">By <a>HSS ARIMBUR</a> <span>2023-2024 BATCH</span></p>
+</div>
+<!-- <div class="description">
+<p>As Vintage decided to have a closer look into fast-paced New York web design realm in person, we get to acquaint with most diverse and exceptionally captivating personalities. As Vintage decided to have a closer look into fast-paced New York web design realm in person, we get to acquaint with most diverse and exceptionally captivating personalities. As Vintage decided to have a closer look into fast-paced New York web design realm in person, we get to acquaint with most diverse and exceptionally captivating personalities.</p>
+<blockquote>As Vintage decided to have a closer look into fast-paced New York web design realm in person. As Vintage decided to have a closer look into fast-paced New York web design realm in person, we get to acquaint with most diverse and exceptionally captivating personalities. As Vintage decided to have a closer look into fast-paced New York web design realm in person, we get to acquaint with most diverse and exceptionally captivating personalities.</blockquote>
+<p>As Vintage decided to have a closer look into fast-paced New York web design realm in person, we get to acquaint with most diverse and exceptionally captivating personalities. We encounter professionals with careers to covet and lives to write books about. As Vintage decided to have a closer look into fast-paced New York web design realm in person, we get to acquaint with most diverse and exceptionally captivating personalities. As Vintage decided to have a closer look into fast-paced New York web design realm in person, we get to acquaint with most diverse and exceptionally captivating personalities. As Vintage decided to have a closer look into fast-paced New York web design realm in person, we get to acquaint with most diverse and exceptionally captivating personalities.</p>
+<div class="share">
+<span>Share:</span>
+<ul class="social">
+<li><a href="#"><img class="svg" src="img/svg/social/facebook.svg" alt></a></li>
+<li><a href="#"><img class="svg" src="img/svg/social/twitter.svg" alt></a></li>
+<li><a href="#"><img class="svg" src="img/svg/social/behance.svg" alt></a></li>
+<li><a href="#"><img class="svg" src="img/svg/social/dribbble.svg" alt></a></li>
+</ul>
+</div>
+</div> -->
+</div>
+</li>
+<!-- <li class="wow fadeInLeft" data-wow-duration="1.5s" data-wow-delay=".2s">
+<div class="list_inner">
+<div class="image">
+<img src="img/placeholders/4-3.jpg" alt />
+<div class="main" data-img-url="img/news/2.jpg"></div>
+<a class="grax_tm_full_link" href="#"></a>
+</div>
+<div class="details">
+<h3 class="title"><a href="#">How to be appreciated for your hard work as a developer</a></h3>
+<p class="date">By <a href="#">Brook Kennedy</a> <span>22 December 2021</span></p>
+</div>
+<div class="description">
+<p>As Vintage decided to have a closer look into fast-paced New York web design realm in person, we get to acquaint with most diverse and exceptionally captivating personalities. As Vintage decided to have a closer look into fast-paced New York web design realm in person, we get to acquaint with most diverse and exceptionally captivating personalities. As Vintage decided to have a closer look into fast-paced New York web design realm in person, we get to acquaint with most diverse and exceptionally captivating personalities.</p>
+<blockquote>As Vintage decided to have a closer look into fast-paced New York web design realm in person. As Vintage decided to have a closer look into fast-paced New York web design realm in person, we get to acquaint with most diverse and exceptionally captivating personalities. As Vintage decided to have a closer look into fast-paced New York web design realm in person, we get to acquaint with most diverse and exceptionally captivating personalities.</blockquote>
+<p>As Vintage decided to have a closer look into fast-paced New York web design realm in person, we get to acquaint with most diverse and exceptionally captivating personalities. We encounter professionals with careers to covet and lives to write books about. As Vintage decided to have a closer look into fast-paced New York web design realm in person, we get to acquaint with most diverse and exceptionally captivating personalities. As Vintage decided to have a closer look into fast-paced New York web design realm in person, we get to acquaint with most diverse and exceptionally captivating personalities. As Vintage decided to have a closer look into fast-paced New York web design realm in person, we get to acquaint with most diverse and exceptionally captivating personalities.</p>
+<div class="share">
+<span>Share:</span>
+<ul class="social">
+<li><a href="#"><img class="svg" src="img/svg/social/facebook.svg" alt></a></li>
+<li><a href="#"><img class="svg" src="img/svg/social/twitter.svg" alt></a></li>
+<li><a href="#"><img class="svg" src="img/svg/social/behance.svg" alt></a></li>
+<li><a href="#"><img class="svg" src="img/svg/social/dribbble.svg" alt></a></li>
+</ul>
+</div>
+</div>
+</div>
+</li>
+<li class="wow fadeInLeft" data-wow-duration="1.5s" data-wow-delay=".4s">
+<div class="list_inner">
+<div class="image">
+<img src="img/placeholders/4-3.jpg" alt />
+<div class="main" data-img-url="img/news/3.jpg"></div>
+<a class="grax_tm_full_link" href="#"></a>
+</div>
+<div class="details">
+<h3 class="title"><a href="#">How designers and developers can collaborate better</a></h3>
+<p class="date">By <a href="#">Paola Atkins</a> <span>05 December 2021</span></p>
+</div>
+<div class="description">
+<p>As Vintage decided to have a closer look into fast-paced New York web design realm in person, we get to acquaint with most diverse and exceptionally captivating personalities. As Vintage decided to have a closer look into fast-paced New York web design realm in person, we get to acquaint with most diverse and exceptionally captivating personalities. As Vintage decided to have a closer look into fast-paced New York web design realm in person, we get to acquaint with most diverse and exceptionally captivating personalities.</p>
+<blockquote>As Vintage decided to have a closer look into fast-paced New York web design realm in person. As Vintage decided to have a closer look into fast-paced New York web design realm in person, we get to acquaint with most diverse and exceptionally captivating personalities. As Vintage decided to have a closer look into fast-paced New York web design realm in person, we get to acquaint with most diverse and exceptionally captivating personalities.</blockquote>
+<p>As Vintage decided to have a closer look into fast-paced New York web design realm in person, we get to acquaint with most diverse and exceptionally captivating personalities. We encounter professionals with careers to covet and lives to write books about. As Vintage decided to have a closer look into fast-paced New York web design realm in person, we get to acquaint with most diverse and exceptionally captivating personalities. As Vintage decided to have a closer look into fast-paced New York web design realm in person, we get to acquaint with most diverse and exceptionally captivating personalities. As Vintage decided to have a closer look into fast-paced New York web design realm in person, we get to acquaint with most diverse and exceptionally captivating personalities.</p>
+<div class="share">
+<span>Share:</span>
+<ul class="social">
+<li><a href="#"><img class="svg" src="img/svg/social/facebook.svg" alt></a></li>
+<li><a href="#"><img class="svg" src="img/svg/social/twitter.svg" alt></a></li>
+<li><a href="#"><img class="svg" src="img/svg/social/behance.svg" alt></a></li>
+<li><a href="#"><img class="svg" src="img/svg/social/dribbble.svg" alt></a></li>
+</ul>
+</div>
+</div>
+</div>
+</li> -->
+</ul>
+</div> 
+</div>
+</div>
+</div>
+
+
+<div class="grax_tm_contact" id="contact">
+<div class="container">
+<div class="grax_tm_title_holder">
+<h3>Get in <span>Touch</span></h3>
+</div>
+<div class="contact_inner">
+<div class="left wow fadeInLeft" data-wow-duration="1s">
+<div class="text">
+<p>Please fill out the form on this section to contact with me. Or call between 9:00 a.m. and 8:00 p.m. ET, Monday through Friday</p>
+</div>
+<div class="info_list">
+    <ul>
+    <li>
+    <div class="list_inner">
+    <img class="svg" src="img/svg/location.svg" alt />
+    <p><span class="first">Address:</span><span class="second">Vellathor,Arimbur,Thrissur,Kerala</span></p>
+    </div>
+    </li>
+    <li>
+    <div class="list_inner">
+    <img class="svg" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAaVBMVEX///8AAABYWFjy8vJTU1Pm5ub39/cwMDBubm7q6upLS0tGRkb7+/vAwMDPz89ra2uVlZVeXl7V1dWfn58pKSnb29u7u7t7e3tlZWXHx8ewsLCQkJA6OjoPDw+lpaWbm5sbGxt+fn6GhoYxrr3TAAACsklEQVR4nO3cbVPaUBCG4UiIxRBBEQVRC/b//8jOVEms9eXkhJ19Nr3v78zs9QFyWEKKgoiIiIiIiIiIiIh8q+7vrjbbaV3P/1S/NH1t8tL1xHvMvJr7/fwsMe9ZMyp321RdSOFq1ocXT7ioe/qCCav+vljChwxfJGH1mAWMI7zM88UR/swFRhHus4FBhDf5wBjC3QBgCOFqCDCCsHkau7DvQTScMPtCGEXYrMcuHHKhCCFshgLlhVejFw4GqgvvRi+cjl1YDQeKC/O/FUYRXo9dWJ4AqC1cjF44YHcRRHiKt6G28BRAaeHwU7e6sNd+ZrNbXXyYt+KrehxKZ433sFmlLxFvvEfNLPm74cx70tw2qcLSe9LclonArfeg2aVe8Hfeg2Y3SRQuvAfNLlUofcn7slRh2A8ahAgDhBChfggR6ocQoX4IEeqHEKF+qbu2IBv9h/ZfZ+2/zw6Jwvcv/Kv5pbfsWOr6t3cywoH3yX6ezDbVTFh5y46ZCWU+h8yE3rA2K+HaG9ZmJZx6w9qshM/esDYroc5P/FZCnZ9PrYQyRxoz4a03rM1KeO4Na7MSeru6jIQHb1eXkbD2dnUZCYVuCDMS/vJ2dRkJ996uLiOhzpHGSiizwzATyuwwzIRC97zZCA9C+3Ab4aPMHspKqPS0Nhvh0pv1Jhuh0JHGSKizpbES6uwwrIRCRxojoc6Wpih6Pe0xOaEjTVFW7ytTHzdwe/HPa495q75p/HcqIESoH0KE+iFEqB9ChPohRKgfQoT6IUSoH0KE+iFEqB9ChPohRKgfQoT6IUSoH0KE+iFEqB9ChPohRKgfQoT6IUSoH0KE+iFEqB9ChPohRKgfQoT6IUSoH0KE+iFEqB9ChPohRKgfQoT6IYwvTH32ZVzhcv0jpae4wuY8Le85iYiI/oN+Ax8gNcxZmandAAAAAElFTkSuQmCC" alt="Facebook Logo" />
+    <p><span class="first">Facebook:</span><span class="second"><a href="https://www.facebook.com/share/FrvQWcuJrNHJLGUe/?mibextid=qi2Omg"><span class="__cf_email__" data-cfemail="f6938e979b869a93b6919b979f9ad895999b">Annliya vinu</span></a></span></p>
+    </div>
+    </li>
+    <li>
+    <div class="list_inner">
+    <img class="svg" src="data:image/png;base64,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" alt />
+    <p><span class="first">SnapChat</span><span class="second"><a href="https://www.snapchat.com/add/annliyavinu23?share_id=nMBi4bErfiQ&locale=en-GB">annliyavinu23</a></span></p>
+    </div>
+    </li>
+    <li>
+    <div class="list_inner">
+    <img class="svg" src="img/svg/social/dribbble.svg" alt />
+    <p><span class="first">Website:</span><span class="second"><a href="#">www.annliyavinu.com</a></span></p>
+    </div>
+    </li>
+    <li>
+    <div class="list_inner">
+    <img class="svg" src="data:image/png;base64,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" alt />
+    <p><span class="first">Telegram</span><span class="second"><a href="https://web.telegram.org/k/#@Annliyavinu">@Annliyavinu</a></span></p>
+    </div>
+    </li>
+    <li>
+    <div class="list_inner">
+    <img class="svg" src="data:image/png;base64,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" alt />
+    <p><span class="first">Instagram</span><span class="second"><a href="https://www.instagram.com/its_me___liya/">its_me___liya</a></span></p>
+    </div>
+    </li>
+    </ul>
+    </div>
+</div>
+<div class="right wow fadeInLeft" data-wow-duration="1s" data-wow-delay=".2s">
+<div class="fields">
+<form action="https://marketifythemes.net/" method="post" class="contact_form" id="contact_form">
+<div class="returnmessage" data-success="Your message has been received, We will contact you soon."></div>
+<div class="empty_notice"><span>Please Fill Required Fields</span></div>
+<div class="first">
+<ul>
+<li>
+<input id="name" type="text" placeholder="Name">
+</li>
+<li>
+<input id="email" type="text" placeholder="Email">
+</li>
+</ul>
+</div>
+<div class="last">
+<textarea id="message" placeholder="Message"></textarea>
+</div>
+<div class="grax_tm_button">
+<a id="send_message" href="#">Send Message</a>
+</div>
+
+</form>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+
+<div class="grax_tm_section">
+<div class="grax_tm_copyright">
+<div class="my_wave">
+<svg width="100%" height="100%" version="1.1" xmlns="http://www.w3.org/2000/svg">
+<defs></defs>
+<path id="wave_img" data-color="#fff" d="M 0 185.609 C 317.16666666666663 118.136 317.16666666666663 118.136 634.3333333333333 151.87 C 951.4999999999999 185.609 951.4999999999999 185.609 1268.6666666666665 116.402 C 1585.833333333333 47.195 1585.833333333333 47.195 1903 131.925 L 1903 507 L 0 507 Z" fill="#fff"></path>
+</svg>
+</div>
+<div class="container">
+<div class="copyright_inner">
+<div class="logo wow fadeInLeft" data-wow-duration="1s">
+<img src="img/logo/dreamgirl1.png" alt />
+</div>
+<div class="social wow fadeInLeft" data-wow-duration="1s" data-wow-delay=".2s">
+<ul>
+<li><a href="https://www.facebook.com/share/FrvQWcuJrNHJLGUe/?mibextid=qi2Omg"><img class="svg" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAaVBMVEX///8AAABYWFjy8vJTU1Pm5ub39/cwMDBubm7q6upLS0tGRkb7+/vAwMDPz89ra2uVlZVeXl7V1dWfn58pKSnb29u7u7t7e3tlZWXHx8ewsLCQkJA6OjoPDw+lpaWbm5sbGxt+fn6GhoYxrr3TAAACsklEQVR4nO3cbVPaUBCG4UiIxRBBEQVRC/b//8jOVEms9eXkhJ19Nr3v78zs9QFyWEKKgoiIiIiIiIiIiIh8q+7vrjbbaV3P/1S/NH1t8tL1xHvMvJr7/fwsMe9ZMyp321RdSOFq1ocXT7ioe/qCCav+vljChwxfJGH1mAWMI7zM88UR/swFRhHus4FBhDf5wBjC3QBgCOFqCDCCsHkau7DvQTScMPtCGEXYrMcuHHKhCCFshgLlhVejFw4GqgvvRi+cjl1YDQeKC/O/FUYRXo9dWJ4AqC1cjF44YHcRRHiKt6G28BRAaeHwU7e6sNd+ZrNbXXyYt+KrehxKZ433sFmlLxFvvEfNLPm74cx70tw2qcLSe9LclonArfeg2aVe8Hfeg2Y3SRQuvAfNLlUofcn7slRh2A8ahAgDhBChfggR6ocQoX4IEeqHEKF+qbu2IBv9h/ZfZ+2/zw6Jwvcv/Kv5pbfsWOr6t3cywoH3yX6ezDbVTFh5y46ZCWU+h8yE3rA2K+HaG9ZmJZx6w9qshM/esDYroc5P/FZCnZ9PrYQyRxoz4a03rM1KeO4Na7MSeru6jIQHb1eXkbD2dnUZCYVuCDMS/vJ2dRkJ996uLiOhzpHGSiizwzATyuwwzIRC97zZCA9C+3Ab4aPMHspKqPS0Nhvh0pv1Jhuh0JHGSKizpbES6uwwrIRCRxojoc6Wpih6Pe0xOaEjTVFW7ytTHzdwe/HPa495q75p/HcqIESoH0KE+iFEqB9ChPohRKgfQoT6IUSoH0KE+iFEqB9ChPohRKgfQoT6IUSoH0KE+iFEqB9ChPohRKgfQoT6IUSoH0KE+iFEqB9ChPohRKgfQoT6IUSoH0KE+iFEqB9ChPohRKgfQoT6IYwvTH32ZVzhcv0jpae4wuY8Le85iYiI/oN+Ax8gNcxZmandAAAAAElFTkSuQmCC" alt /></a></li>
+<li><a href="https://www.instagram.com/its_me___liya/"><img class="svg" src="data:image/png;base64,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" alt /></a></li>
+<li><a href="https://web.telegram.org/k/#@Annliyavinu"><img class="svg" src="data:image/png;base64,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" alt /></a></li>
+<li><a href="https://www.snapchat.com/add/annliyavinu23?share_id=nMBi4bErfiQ&locale=en-GB"><img class="svg" src="data:image/png;base64,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" alt /></a></li>
+
+</ul>
+</div>
+<div class="copy wow fadeInLeft" data-wow-duration="1s" data-wow-delay=".4s">
+<p>&copy; Copyright 2022 by Marketify</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+
+<div class="mouse-cursor cursor-outer"></div>
+<div class="mouse-cursor cursor-inner"></div>
+
+
+<div class="progressbar">
+<a href="#"><span class="text">To Top</span></a>
+<span class="line"></span>
+</div>
+
+</div>
+
+
+<script data-cfasync="false" src="../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="js/jquery.js"></script>
+<!--[if lt IE 10]> <script type="text/javascript" src="js/ie8.js"></script> <![endif]-->
+<script src="js/plugins.js"></script>
+<script src="js/init.js"></script>
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const notification = document.getElementById('notification');
+      const closeBtn = document.getElementById('closeBtn');
+      const timer = document.getElementById('timer');
+    
+      // Get user's birthday (replace with actual birthday)
+      const birthday = new Date('2008-05-21');
+      const name = "Annliya"; // Replace with user's name
+    
+      // Show notification if it's the user's birthday
+      if (isBirthdayToday(birthday)) {
+        showNotification();
+      }
+    
+      // Timer to close notification after 10 seconds
+      let timeLeft = 30;
+      updateTimer();
+    
+      const countdown = setInterval(() => {
+        timeLeft--;
+        updateTimer();
+        if (timeLeft <= 0) {
+          clearInterval(countdown);
+          closeNotification();
+        }
+      }, 1000);
+    
+      // Update timer display
+      function updateTimer() {
+        timer.innerText = `Closing in ${timeLeft} seconds`;
+      }
+    
+      // Show notification
+      function showNotification() {
+        notification.style.display = 'block';
+        document.getElementById('name').innerText = name;
+      }
+    
+      // Close notification when close button is clicked
+      closeBtn.addEventListener('click', closeNotification);
+    
+      // Close notification function
+      function closeNotification() {
+        notification.style.display = 'none';
+        clearInterval(countdown);
+      }
+    
+      // Function to check if it's the user's birthday today
+      function isBirthdayToday(birthday) {
+        const today = new Date();
+        return today.getMonth() === birthday.getMonth() && today.getDate() === birthday.getDate();
+      }
+    });
+    
+    document.addEventListener("DOMContentLoaded", function() {
+      var customNotification = document.getElementById("custom-notification");
+    
+      // Function to show notification after 2 seconds
+      function showCustomNotification() {
+        customNotification.classList.add("show");
+      }
+    
+      // Call showCustomNotification function after 2 seconds
+      setTimeout(showCustomNotification,2000); //  seconds in milliseconds
+    
+     
+      // Hide notification after 2 minutes (120 seconds)
+      setTimeout(function() {
+        customNotification.classList.remove("show");
+      },8000); // 120 seconds in milliseconds
+    });
+    
+    
+    
+    
+    </script>
+</body>
+
+<!-- Mirrored from marketifythemes.net/html/grax/water.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 04 Apr 2024 09:34:51 GMT -->
+</html>
