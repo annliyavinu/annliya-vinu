@@ -847,6 +847,23 @@
     
     
     </script>
+     <script>
+    const title1 = "Annliya's";
+    const title2 = "Website";
+    const color1 = "blue"; // Color for title1
+    const color2 = "green"; // Color for title2
+
+    function animateTitle() {
+      let isTitle1 = true;
+      setInterval(() => {
+        document.title = isTitle1 ? title1 : title2;
+        document.querySelector("h1").style.color = isTitle1 ? color1 : color2;
+        isTitle1 = !isTitle1;
+      }, 1000); // Change this value to adjust the animation speed (in milliseconds)
+    }
+
+    window.addEventListener("load", animateTitle);
+  </script>
 </body>
 
 <!-- Mirrored from marketifythemes.net/html/grax/water.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 04 Apr 2024 09:34:51 GMT -->
