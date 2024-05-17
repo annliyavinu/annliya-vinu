@@ -344,7 +344,7 @@
     function animateTitle() {
       let isTitle1 = true;
       setInterval(() => {
-        document.title = isTitle1 ? title1 : title2;
+        document.title = isTitle1 ? title2 : title1;
         document.querySelector("h1").style.color = isTitle1 ? color1 : color2;
         isTitle1 = !isTitle1;
       }, 1000); // Change this value to adjust the animation speed (in milliseconds)
